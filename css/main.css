@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #EFF1F3; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+h1, h2, h3 {
+  font-family: 'Work Sans'; }
+
+h1 {
+  font-size: 6em; }
+
+p {
+  font-family: 'Bitter', sans-serif;
+  font-size: 1.3em;
+  color: #223843; }
+
+button {
+  padding: .3em 1em;
+  border: 2px solid #223843;
+  background-color: #AD343E;
+  font-size: 1.5em;
+  box-shadow: 5px 5px 0px #223843;
+  transition: 0.3s;
+  cursor: clicker; }
+  button a {
+    color: #EFF1F3;
+    font-family: 'Work Sans', sans-serif;
+    position: relative;
+    transition: 0.5s; }
+    button a:hover {
+      color: #AD343E; }
+    button a:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: .3s; }
+
+button:hover {
+  background-color: #EFF1F3;
+  color: #AD343E; }
+  button:hover a {
+    color: #AD343E;
+    padding-right: 1em; }
+  button:hover a:after {
+    opacity: 1;
+    right: 0; }
+
+a {
+  color: #AD343E;
+  font-family: 'Bitter', sans-serif;
+  text-decoration: none;
+  font-weight: bold; }
+
+/** NAVIGATION **/
+.menu-container {
+  float: right;
+  -ms-transform: rotate(20deg);
+  /* IE 9 */
+  -webkit-transform: rotate(20deg);
+  /* Safari 3-8 */
+  transform: rotate(20deg);
+  transition: 0.3s; }
+  .menu-container:hover {
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Safari 3-8 */
+    transform: rotate(0deg); }
+
+.desktop-menu-title {
+  display: block;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 1.5em;
+  -ms-transform: rotate(20deg);
+  /* IE 9 */
+  -webkit-transform: rotate(20deg);
+  /* Safari 3-8 */
+  transform: rotate(-20deg); }
+
+.nav-line {
+  margin: .5em 0;
+  width: 100px;
+  height: 15px;
+  border: 3px solid #223843;
+  border-radius: 100px;
+  background: white;
+  -ms-transform: rotate(20deg);
+  /* IE 9 */
+  -webkit-transform: rotate(20deg);
+  /* Safari 3-8 */
+  transform: rotate(-20deg);
+  box-shadow: 3px 3px 0 #AD343E; }
+
+/** HOME SECTION **/
+.header-container {
+  margin: 5em 5em; }
+
+.header-border1 {
+  border-top: 16px dashed #223843;
+  border-bottom: 16px dashed #AD343E; }
+
+.header-border2 {
+  border-right: 16px dashed #AD343E;
+  border-left: 16px dashed #223843; }
+
+.header-content-container {
+  margin: 3em 5em; }
+
+.website-name {
+  font-family: 'Major Mono Display', monospace; }
+  .website-name span {
+    font-size: 1.5em;
+    color: #AD343E; }
+  .website-name span:last-of-type {
+    color: #223843; }
+
+.title-header-container .title-header:nth-last-of-type(2) {
+  margin-bottom: 2em; }
+
+.title-content {
+  display: inline-block;
+  color: #EFF1F3;
+  background-color: #223843;
+  box-shadow: 5px 10px #AD343E;
+  padding-right: .9em; }
+  .title-content h1 {
+    animation: 1.5s ease-out 0s 1 slideInFromLeft; }
+
+.description-box {
+  margin: 2em 0;
+  width: 85%;
+  height: 100%;
+  background: white;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  padding-bottom: 5em; }
+  .description-box h3 {
+    padding: .4em;
+    font-size: 3.5em;
+    text-align: center;
+    color: #223843; }
+  .description-box p {
+    padding: 0 2em;
+    line-height: 1.6;
+    opacity: 0.8; }
+
+.header-buttons {
+  text-align: center;
+  width: 85%; }
+  .header-buttons button {
+    width: 40%;
+    margin: auto 1em; }
+
+.schneider-portrait-img {
+  margin: 2em 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
+
+.portrait-button {
+  margin: 0 1em;
+  text-align: center; }
+  .portrait-button button {
+    width: 100%; }
+
+/*** MY SKILLS SECTION ***/
+.skills-section {
+  position: relative;
+  z-index: 1;
+  background-image: linear-gradient(rgba(34, 56, 67, 0.43), rgba(34, 56, 67, 0.43)), url("../img/roadToMountains.jpg");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  width: 100%;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  /*This should match .title-content's margin-top for equal balance on the top and buttom*/ }
+
+.skills-content-container {
+  text-align: center;
+  margin-top: 1em; }
+  .skills-content-container .title-header {
+    margin: 2em auto; }
+
+.skills-box {
+  width: 40em;
+  margin: 0 auto;
+  padding: 2em 2em 4em 2em;
+  background: white;
+  opacity: 0.83;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
+  .skills-box h3 {
+    display: inline;
+    font-size: 2.5em;
+    padding-bottom: .3em;
+    border-bottom: 5px solid #AD343E;
+    color: #223843; }
+  .skills-box p {
+    margin-top: 1.5em;
+    line-height: 26pt; }
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@media only screen and (max-width: 1623px) {
+  h1 {
+    font-size: 5em; } }
+@media only screen and (max-width: 1465px) {
+  button {
+    font-size: 1.3em; } }
+@media only screen and (max-width: 1422px) {
+  [class*="col-"] {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+
+  h1 {
+    font-size: 4em; }
+
+  .col-m-12 {
+    width: 100%; }
+
+  .description-box {
+    margin: 2em auto; }
+
+  .description-box h3 {
+    font-size: 3em; }
+
+  .img-comtainer {
+    text-align: center; }
+
+  .schneider-portrait-img {
+    width: 50%;
+    height: auto; }
+
+  .header-buttons {
+    width: 100%; }
+
+  .portrait-button button {
+    width: 75%; } }
+@media only screen and (max-width: 1221px) {
+  .header-content-container {
+    margin: 3em 2em; } }
+@media only screen and (max-width: 1126px) {
+  h1 {
+    font-size: 3.5em; }
+
+  .header-container {
+    margin: 2em 1em; }
+
+  .header-border1, .header-border2 {
+    border: none; } }
+@media only screen and (max-width: 866px) {
+  .website-name {
+    margin-left: -3em; }
+
+  .title-header {
+    margin-left: -4em; }
+
+  .schneider-portrait-img {
+    width: 84%; } }
+@media only screen and (max-width: 769px) {
+  .col-sm-12 {
+    width: 100%; }
+
+  .menu-container {
+    margin: 0.6em 16em;
+    float: none; }
+
+  .header-container {
+    margin: -2em 1em; }
+
+  .description-box {
+    width: 100%;
+    margin: 0em auto 2em auto;
+    padding-bottom: 2em; }
+
+  .menu-container {
+    float: none;
+    margin: 0;
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Safari 3-8 */
+    transform: rotate(0deg);
+    transition: 0.3s; }
+    .menu-container:hover {
+      -ms-transform: rotate(20deg);
+      /* IE 9 */
+      -webkit-transform: rotate(20deg);
+      /* Safari 3-8 */
+      transform: rotate(20deg); }
+
+  .nav-icon {
+    text-align: center; }
+
+  .desktop-menu-title {
+    display: block;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 1.5em;
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Safari 3-8 */
+    transform: rotate(0deg); }
+
+  .nav-line {
+    margin: .5em auto;
+    width: 100px;
+    height: 15px;
+    border: 3px solid #223843;
+    border-radius: 100px;
+    background: white;
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Safari 3-8 */
+    transform: rotate(0deg);
+    box-shadow: 3px 3px 0 #AD343E; } }
+@media only screen and (max-width: 703px) {
+  .header-buttons button {
+    width: 75%;
+    margin: 1em 1em; } }
+@media only screen and (max-width: 640px) {
+  .skills-box {
+    width: 100%; } }
+@media only screen and (max-width: 500px) {
+  .header-content-container {
+    margin: 3em 0; }
+
+  .website-name {
+    margin-left: -1.6em; }
+
+  .title-header {
+    margin-left: -2em; }
+
+  h1 {
+    font-size: 3em; }
+
+  .description-box h3 {
+    font-size: 2.5em; } }
+@media only screen and (max-width: 446px) {
+  .header-container {
+    margin: -2em 0; }
+
+  [class*="col-"] {
+    padding: 15px 0; }
+
+  .schneider-portrait-img {
+    width: 100%; }
+
+  .title-header, .website-name {
+    margin: 0; }
+
+  .skills-box {
+    padding: 2em 0 4em 0; }
+    .skills-box h3 {
+      font-size: 2em; } }
+@media only screen and (max-width: 420px) {
+  .title-content h1 {
+    font-size: 2.5em; }
+
+  .description-box h3 {
+    font-size: 2em; }
+
+  p {
+    font-size: 1em;
+    padding: 0 1em; } }
+@media only screen and (max-width: 349px) {
+  .title-content h1 {
+    font-size: 2em; } }
+
+/*# sourceMappingURL=main.css.map */
