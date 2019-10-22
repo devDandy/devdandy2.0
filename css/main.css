@@ -252,6 +252,11 @@ a {
     line-height: 26pt; }
 
 /*** PORTFOLIO SECTION ***/
+.portfolio-responsive-col {
+  float: left;
+  padding: 15px;
+  width: 33.33%; }
+
 .portfolio-header {
   position: relative; }
   .portfolio-header .title-header {
@@ -264,7 +269,8 @@ a {
   width: 100%; }
 
 .portfolio-card {
-  width: 500px; }
+  width: 95%;
+  margin: 0 auto; }
 
 .portfolio-header-img {
   width: 100%;
@@ -342,11 +348,22 @@ a {
   .portfolio-description-box p {
     margin-top: 1.5em; }
 
+.portfolio-button-links {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0; }
+  .portfolio-button-links button {
+    margin: 0 0.5em; }
+
 @keyframes slideInFromLeft {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
+@media only screen and (max-width: 1303px) {
+  .portfolio-responsive-col {
+    width: 50%; } }
 @media only screen and (max-width: 1623px) {
   h1 {
     font-size: 5em; } }
@@ -394,6 +411,9 @@ a {
 
   .header-border1, .header-border2 {
     border: none; } }
+@media only screen and (max-width: 870px) {
+  .portfolio-responsive-col {
+    width: 100%; } }
 @media only screen and (max-width: 866px) {
   .website-name {
     margin-left: -3em; }
@@ -464,6 +484,10 @@ a {
     /* Safari 3-8 */
     transform: rotate(0deg);
     box-shadow: 3px 3px 0 #AD343E; } }
+@media only screen and (max-width: 709px) {
+  .portfolio-section .title-header {
+    width: 100%;
+    text-align: center; } }
 @media only screen and (max-width: 703px) {
   .header-buttons button {
     width: 75%;
@@ -471,6 +495,9 @@ a {
 @media only screen and (max-width: 640px) {
   .skills-box {
     width: 100%; } }
+@media only screen and (max-width: 600px) {
+  .portfolio-header-background {
+    width: 150%; } }
 @media only screen and (max-width: 500px) {
   .header-content-container {
     margin: 3em 0; }
@@ -503,6 +530,15 @@ a {
     padding: 2em 0 4em 0; }
     .skills-box h3 {
       font-size: 2em; } }
+@media only screen and (max-width: 434px) {
+  .portfolio-button-links {
+    position: static; }
+
+  .portfolio-button-links button {
+    margin: 0.3em 0.5em; }
+
+  .portfolio-description-box {
+    padding-bottom: 2em; } }
 @media only screen and (max-width: 420px) {
   .title-content h1 {
     font-size: 2.5em; }
