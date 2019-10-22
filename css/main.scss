@@ -280,6 +280,21 @@ a {
 }
 
 
+/*** PORTFOLIO SECTION ***/
+
+    .portfolio-header {
+        position: relative;
+        .title-header {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .portfolio-header-background {
+        width:100%;
+    }
+
 @keyframes slideInFromLeft {
     0% {
         opacity: 0;
@@ -360,6 +375,9 @@ a {
     }
     .title-header {
         margin-left: -4em;
+    }
+    .portfolio-section .title-header {
+        margin: 0;
     }
     .schneider-portrait-img {
         width: 84%;
