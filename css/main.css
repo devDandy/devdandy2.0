@@ -95,6 +95,34 @@ button:hover {
     opacity: 1;
     right: 0; }
 
+.reset-button {
+  border: 2px solid #223843;
+  background-color: #AD343E;
+  font-size: 1.5em;
+  box-shadow: 5px 5px 0px #223843;
+  transition: 0.3s;
+  cursor: clicker;
+  color: #EFF1F3;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  position: relative;
+  transition: 0.5s; }
+  .reset-button:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 7px;
+    left: 88px;
+    transition: .3s; }
+
+.reset-button:hover {
+  background-color: #EFF1F3;
+  color: #AD343E;
+  padding-right: 2em; }
+  .reset-button:hover:after {
+    opacity: 1;
+    right: 0; }
+
 a {
   color: #AD343E;
   font-family: 'Bitter', sans-serif;
@@ -364,7 +392,7 @@ a {
 /*** CONTACT SECTION ***/
 .contact-section-content {
   width: 50%;
-  margin: 0 auto; }
+  margin: 2em auto; }
 
 .contact-description-box {
   position: relative;
@@ -392,6 +420,13 @@ input[type=text], textarea {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   font-family: 'Work Sans', sans-serif;
   font-size: 1em; }
+
+.form-buttons {
+  margin: 1em auto;
+  text-align: center; }
+  .form-buttons button[type=submit], .form-buttons button[type=reset] {
+    width: 25%;
+    margin: 0 .5em; }
 
 /*** ANIMATIONS ***/
 @keyframes slideInFromLeft {
