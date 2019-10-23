@@ -135,6 +135,12 @@ button:hover {
         right: 0;
     }
 }
+
+
+
+
+
+
 a {
     color: $secondary-color;
     font-family: 'Bitter', sans-serif;
@@ -429,7 +435,7 @@ a {
         z-index: 1;
         h3 {
             display: inline;
-            font-size: 2em;
+            font-size: 2.5em;
             padding-bottom: .3em;
             border-bottom: 5px solid $secondary-color;
             color: $main-color;
@@ -440,9 +446,12 @@ a {
     }
     input[type=text], textarea {
         width: 100%;
-        padding: 1em 3em;
+        padding: 12px 20px;
+        margin: 8px 0;
         border: none;
         box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1em;
     }
 
     /*** ANIMATIONS ***/
