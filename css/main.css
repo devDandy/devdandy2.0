@@ -251,22 +251,27 @@ a {
     margin-top: 1.5em;
     line-height: 26pt; }
 
-/*** PORTFOLIO SECTION ***/
-.portfolio-responsive-col {
-  float: left;
-  padding: 15px;
-  width: 33.33%; }
-
-.portfolio-header {
+/*** PORTFOLIO / CONTACT SECTION ***/
+/*Since both sections have a similar header, I condensed it down it just one class to control both headers */
+.section-header {
   position: relative; }
-  .portfolio-header .title-header {
+  .section-header .title-header {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
 
-.portfolio-header-background {
+.section-header-background {
   width: 100%; }
+
+/*** PORTFOLIO SECTION ***/
+.portfolio-section {
+  margin-bottom: 5em; }
+
+.portfolio-responsive-col {
+  float: left;
+  padding: 15px;
+  width: 33.33%; }
 
 .portfolio-card {
   width: 95%;
@@ -356,11 +361,42 @@ a {
   .portfolio-button-links button {
     margin: 0 0.5em; }
 
+/*** CONTACT SECTION ***/
+.contact-section-content {
+  width: 50%;
+  margin: 0 auto; }
+
+.contact-description-box {
+  position: relative;
+  margin: 2em 0;
+  padding: 2em 2em 4em 2em;
+  background: white;
+  opacity: 0.83;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1; }
+  .contact-description-box h3 {
+    display: inline;
+    font-size: 2em;
+    padding-bottom: .3em;
+    border-bottom: 5px solid #AD343E;
+    color: #223843; }
+  .contact-description-box p {
+    margin-top: 1.5em; }
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 1em 3em;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
+
+/*** ANIMATIONS ***/
 @keyframes slideInFromLeft {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
+/*** MEDIA QUERY ***/
 @media only screen and (max-width: 1303px) {
   .portfolio-responsive-col {
     width: 50%; } }
@@ -496,7 +532,7 @@ a {
   .skills-box {
     width: 100%; } }
 @media only screen and (max-width: 600px) {
-  .portfolio-header-background {
+  .section-header-background {
     width: 150%; } }
 @media only screen and (max-width: 500px) {
   .header-content-container {

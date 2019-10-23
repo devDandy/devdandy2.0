@@ -323,25 +323,34 @@ a {
 }
 
 
+/*** PORTFOLIO / CONTACT SECTION ***/
+/*Since both sections have a similar header, I condensed it down it just one class to control both headers */
+
+.section-header {
+    position: relative;
+    .title-header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.section-header-background {
+    width:100%;
+}
+
 /*** PORTFOLIO SECTION ***/
+
+
+    .portfolio-section {
+        margin-bottom: 5em;
+    }
 
     .portfolio-responsive-col {
         float: left;
         padding: 15px;    
         width: 33.33%;
-    }
-    .portfolio-header {
-        position: relative;
-        .title-header {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-
-    .portfolio-header-background {
-        width:100%;
     }
     .portfolio-card {
         width: 95%;
@@ -404,7 +413,39 @@ a {
         }
     }
 
+    /*** CONTACT SECTION ***/
+    .contact-section-content {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .contact-description-box {
+        position: relative;
+        margin: 2em 0;
+        padding: 2em 2em 4em 2em;
+        background: white;
+        opacity: 0.83;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        z-index: 1;
+        h3 {
+            display: inline;
+            font-size: 2em;
+            padding-bottom: .3em;
+            border-bottom: 5px solid $secondary-color;
+            color: $main-color;
+        }
+        p {
+            margin-top: 1.5em;
+        }
+    }
+    input[type=text], textarea {
+        width: 100%;
+        padding: 1em 3em;
+        border: none;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
 
+    /*** ANIMATIONS ***/
 @keyframes slideInFromLeft {
     0% {
         opacity: 0;
@@ -415,7 +456,8 @@ a {
   }
 
 
-  
+    /*** MEDIA QUERY ***/
+
   @media only screen and (max-width: 1303px) {
     .portfolio-responsive-col {
         width: 50%;
@@ -585,7 +627,7 @@ a {
     }
   }
   @media only screen and (max-width: 600px) {
-    .portfolio-header-background {
+    .section-header-background {
         width: 150%;
     }
   }
