@@ -485,9 +485,15 @@ input[type=text], textarea {
 
   .header-border1, .header-border2 {
     border: none; } }
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 916px) {
+  .contact-section .title-content {
+    width: 29em; } }
+@media only screen and (max-width: 871px) {
   .portfolio-responsive-col {
-    width: 100%; } }
+    width: 100%; }
+
+  .contact-section-content {
+    width: 75%; } }
 @media only screen and (max-width: 866px) {
   .website-name {
     margin-left: -3em; }
@@ -499,7 +505,10 @@ input[type=text], textarea {
     margin: 0; }
 
   .schneider-portrait-img {
-    width: 84%; } }
+    width: 84%; }
+
+  .contact-section .title-header {
+    margin-left: 0; } }
 @media only screen and (max-width: 769px) {
   .col-sm-12 {
     width: 100%; }
@@ -557,7 +566,10 @@ input[type=text], textarea {
     -webkit-transform: rotate(0deg);
     /* Safari 3-8 */
     transform: rotate(0deg);
-    box-shadow: 3px 3px 0 #AD343E; } }
+    box-shadow: 3px 3px 0 #AD343E; }
+
+  .contact-section-content {
+    width: 85%; } }
 @media only screen and (max-width: 709px) {
   .portfolio-section .title-header {
     width: 100%;
@@ -581,6 +593,12 @@ input[type=text], textarea {
 
   .title-header {
     margin-left: -2em; }
+
+  .contact-section .title-header {
+    margin-left: 0; }
+
+  .contact-section .title-content {
+    width: 25em; }
 
   h1 {
     font-size: 3em; }
@@ -613,6 +631,19 @@ input[type=text], textarea {
 
   .portfolio-description-box {
     padding-bottom: 2em; } }
+@media only screen and (max-width: 425px) {
+  /*Portfolio section's width stretches to 100%*/
+  .portfolio-responsive-col {
+    padding: 0; }
+
+  .portfolio-card {
+    width: 100%; }
+
+  /*Contact Section "Drop me a line" title cuts into two lines */
+  .contact-description-box {
+    padding: 2em 1em 1.1em 1em; }
+    .contact-description-box h3 {
+      font-size: 2em; } }
 @media only screen and (max-width: 420px) {
   .title-content h1 {
     font-size: 2.5em; }
@@ -622,7 +653,10 @@ input[type=text], textarea {
 
   p {
     font-size: 1em;
-    padding: 0 1em; } }
+    padding: 0 1em; }
+
+  .contact-section .title-content {
+    width: 21em; } }
 @media only screen and (max-width: 349px) {
   .title-content h1 {
     font-size: 2em; } }

@@ -583,10 +583,17 @@ a {
         border: none;
     }
   }
-
-  @media only screen and (max-width: 870px) {
+  @media only screen and (max-width: 916px) {
+    .contact-section .title-content {
+        width: 29em;
+    }
+}
+  @media only screen and (max-width: 871px) {
     .portfolio-responsive-col {
         width: 100%;
+  }
+  .contact-section-content {
+      width: 75%;
   }
 }
 
@@ -594,6 +601,7 @@ a {
     .website-name {
         margin-left: -3em;
     }
+
     .title-header {
         margin-left: -4em;
     }
@@ -602,6 +610,9 @@ a {
     }
     .schneider-portrait-img {
         width: 84%;
+    }
+    .contact-section .title-header {
+        margin-left: 0;
     }
 
   }
@@ -659,7 +670,10 @@ a {
         transform: rotate(0deg);
         box-shadow: 3px 3px 0 $secondary-color;
     }
-    
+
+    .contact-section-content {
+        width: 85%;
+    }
 
   }
 
@@ -698,6 +712,12 @@ a {
     }
     .title-header {
         margin-left: -2em;
+    }
+    .contact-section .title-header {
+        margin-left: 0;
+    }
+    .contact-section .title-content {
+        width: 25em;
     }
     h1 {
         font-size: 3em;
@@ -739,6 +759,25 @@ a {
         padding-bottom: 2em;;
     }
   }
+  
+  @media only screen and (max-width: 425px)  {
+        /*Portfolio section's width stretches to 100%*/
+        .portfolio-responsive-col {
+            padding:0;
+        }
+        .portfolio-card {
+            width: 100%;
+        }
+
+
+        /*Contact Section "Drop me a line" title cuts into two lines */
+        .contact-description-box {
+            padding: 2em 1em 1.1em 1em;
+            h3 {
+                font-size:2em;
+            }
+        }
+  }
 
   @media only screen and (max-width: 420px)  {
         .title-content h1 {
@@ -750,6 +789,10 @@ a {
         p {
             font-size: 1em;
             padding: 0 1em;;
+        }
+
+        .contact-section .title-content {
+            width: 21em;
         }
    }
 
