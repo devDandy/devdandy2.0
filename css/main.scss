@@ -703,6 +703,14 @@ a {
     }
   }
 
+  @media only screen and (max-width: 590px) {
+      /*Button text does not cut off before 590px*/
+    .form-buttons button[type="submit"], .form-buttons button[type="reset"] {
+        width: 100%;
+        margin:.5em 0;
+    }
+  }
+
   @media only screen and (max-width: 500px) {
     .header-content-container {
         margin: 3em 0;
