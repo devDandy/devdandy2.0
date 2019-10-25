@@ -12,15 +12,15 @@
 			<div id="navbar" class="navbar-overlay">
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 					<div class="navbar-overlay-content">
-						<a href="">Home</a>
-						<a href="#my-Skills">My Skills</a>
-						<a href="#my-Portfolio">My Portfolio</a>
-						<a href="#my-Contact-Info">My Contact Info</a>
+						<a href="#home" onclick="closeNav()">Home</a>
+						<a href="#my-skills" onclick="closeNav()">My Skills</a>
+						<a href="#my-portfolio" onclick="closeNav()">My Portfolio</a>
+						<a href="#my-contact-info" onclick="closeNav()">My Contact Info</a>
 					</div>
 			</div>
 		</nav>
 		<header>
-			<div class="header-container">
+			<div id="home" class="header-container">
 				<div class="header-section ">
 					<div class="header-border1">	
 					<div class="header-border2">
@@ -49,7 +49,7 @@
 
 							<div class="col-4 col-sm-12">
 								<div class="menu-container">
-										<div class="nav-icon">
+										<div class="nav-icon" onclick="openNav()">
 												<span class="desktop-menu-title">Menu</span>
 												<div class="nav-line-group">
 														<div class="nav-line"></div>
@@ -81,8 +81,8 @@
 										</div>
 										<!-- description box -->
 										<div class="header-buttons">
-											<button><a href="#portfolio"> My Portfolio </a></button>
-											<button><a href="#contact-info"> My Contact Info</a></button>
+											<button><a href="#my-portfolio"> My Portfolio </a></button>
+											<button><a href="#my-contact-info"> My Contact Info</a></button>
 										</div>
 							</div>
 							<!-- col-8 -->
@@ -111,7 +111,7 @@
 		</header>
 
 		<main>
-			<div class="skills-section">
+			<div id="my-skills" class="skills-section">
 				<div class="skills-content-container">
 					<div class="title-header">
 						<span class="title-content"><h1>My Skills</h1></span>
@@ -142,7 +142,7 @@
 			<!-- skill-section -->
 
 
-			<div class="portfolio-section">
+			<div id="my-portfolio"class="portfolio-section">
 				<div class="section-header">
 					<img src="img/portfolio-header.svg" alt="Portfolio Header" class="section-header-background">
 					<div class="title-header">
@@ -266,7 +266,7 @@
 				<!-- row -->
 			</div>
 			<!-- portfolio-section -->
-			<div class="contact-section" id="contact-section">
+			<div class="contact-section" id="my-contact-info">
 					<div class="section-header">
 							<img src="img/contact-bg.png" alt="Contact Header" class="section-header-background">
 							<div class="title-header">
@@ -326,6 +326,6 @@
 
 
 
-
+		<script src="js/main.js"></script>
 	</body>
 </html>
