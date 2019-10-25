@@ -177,8 +177,6 @@ button:hover {
 
 }
 
-
-
 a {
     color: $secondary-color;
     font-family: 'Bitter', sans-serif;
@@ -186,6 +184,56 @@ a {
     font-weight: bold;
 }
 /** NAVIGATION **/
+
+
+.navbar-overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #AD343E;
+    background-color: rgba(173, 52, 62, .85);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  
+  .navbar-overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .navbar-overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-family:'Work Sans', sans-serif;
+    font-weight:bold;
+    font-size: 4em;
+    color: $background-color;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .navbar-overlay a:hover, .navbar-overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .navbar-overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+
+
+
 .menu-container {
     float: right;
     -ms-transform: rotate(20deg); /* IE 9 */
