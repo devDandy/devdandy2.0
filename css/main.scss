@@ -277,12 +277,13 @@ a {
 }
 
 .description-box {
+    position: relative;
     margin: 2em 0;
     width: 85%;
     height: 100%;
     background: white;
     box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-    padding-bottom: 5em;
+    padding-bottom: 1em;
     h3 {
         padding: .4em;
         font-size: 3.5em;
@@ -296,6 +297,15 @@ a {
 
     }
 }
+
+.social-media-icons {
+    text-align:center;
+    img {
+        width: 64px;
+        margin: 0 1em;
+    }
+}
+
 
 .header-buttons {
     // margin: 0 1em;
@@ -318,9 +328,9 @@ a {
     text-align: center;
     button {
         width: 100%;
-        // margin: 0 1em;
     }
 }
+
 
 
 
