@@ -364,6 +364,7 @@ a {
     bottom: 11px; }
 
 .portfolio-description-box {
+  display: none;
   position: relative;
   margin: 0 auto;
   padding: 2em 2em 4em 2em;
@@ -427,6 +428,15 @@ input[type=text], textarea {
   .form-buttons button[type=submit], .form-buttons button[type=reset] {
     width: 25%;
     margin: 0 .5em; }
+
+/*** FOOTER SECTION ***/
+.footer-section {
+  background: #AD343E;
+  text-align: center; }
+  .footer-section p {
+    font-family: 'Work Sans';
+    font-weight: bold;
+    color: #EFF1F3; }
 
 /*** ANIMATIONS ***/
 @keyframes slideInFromLeft {

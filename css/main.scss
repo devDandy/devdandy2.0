@@ -428,6 +428,7 @@ a {
         @include plusMinus(24px, 2px, $background-color);
     }
     .portfolio-description-box {
+        display: none;
         position: relative;
         margin: 0 auto;
         padding: 2em 2em 4em 2em;
@@ -502,6 +503,16 @@ a {
         }
     }
 
+    /*** FOOTER SECTION ***/
+    .footer-section {
+        background: $secondary-color;
+        text-align: center;
+        p {
+            font-family: 'Work Sans';
+            font-weight: bold;
+            color: $background-color;
+        }
+    }
     /*** ANIMATIONS ***/
 @keyframes slideInFromLeft {
     0% {
