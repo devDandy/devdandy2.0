@@ -8,3 +8,10 @@ function openNav() {
     document.getElementById("navbar").style.width = "0%";
   } 
 
+
+  function showPortfolioInformation() 
+  {
+
+  }
+
+

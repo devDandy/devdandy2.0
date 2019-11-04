@@ -598,7 +598,8 @@ input[type=text], textarea {
       transform: rotate(20deg); }
 
   .nav-icon {
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
 
   .desktop-menu-title {
     display: block;
@@ -645,6 +646,10 @@ input[type=text], textarea {
   .form-buttons button[type="submit"], .form-buttons button[type="reset"] {
     width: 100%;
     margin: .5em 0; } }
+@media only screen and (max-width: 522px) {
+  /*Makes navbar text not go on another line*/
+  .navbar-overlay a {
+    font-size: 3em; } }
 @media only screen and (max-width: 500px) {
   .header-content-container {
     margin: 3em 0; }
@@ -718,8 +723,16 @@ input[type=text], textarea {
 
   .contact-section .title-content {
     width: 21em; } }
+@media only screen and (max-width: 396px) {
+  /*Makes navbar text not go on another line*/
+  .navbar-overlay a {
+    font-size: 2.5em; } }
 @media only screen and (max-width: 349px) {
   .title-content h1 {
+    font-size: 2em; } }
+@media only screen and (max-width: 332px) {
+  /*Makes navbar text not go on another line*/
+  .navbar-overlay a {
     font-size: 2em; } }
 
 /*# sourceMappingURL=main.css.map */
