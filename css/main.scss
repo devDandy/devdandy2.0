@@ -183,6 +183,31 @@ a {
     text-decoration: none;
     font-weight: bold;
 }
+
+#backToTop{
+    display:none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background:#dda448;
+    width:4em;
+    height:4em;
+    border-radius:250px;
+    cursor:pointer;
+    z-index:99;
+    img {
+        position: absolute;
+        top:50%;
+        left:50%;
+        width:32px;
+        height:32px;
+        margin-top: -16px; /* Half the height */
+        margin-left: -16px; /* Half the width */
+    }
+}
+
+
+
 /** NAVIGATION **/
 
 
