@@ -490,12 +490,33 @@ input[type=text], textarea {
   font-family: 'Work Sans', sans-serif;
   font-size: 1em; }
 
+.form-error {
+  display: inline;
+  float: right;
+  color: red; }
+
 .form-buttons {
   margin: 1em auto;
   text-align: center; }
   .form-buttons button[type=submit], .form-buttons button[type=reset] {
     width: 25%;
     margin: 0 .5em; }
+
+.submit-btn span {
+  color: #EFF1F3;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  position: relative;
+  transition: 0.5s; }
+  .submit-btn span:hover {
+    color: #AD343E; }
+  .submit-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: .3s; }
 
 /*** FOOTER SECTION ***/
 .footer-section {

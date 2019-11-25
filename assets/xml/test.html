@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+<body>
+<div class="showProject"></div>
+
+<script>
+    showProject(0);
+
+    function showProject(i) 
+    {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() 
+        {
+            if (this.readyState == 4 && this.status == 200) 
+            {
+                myFunction(this, i);
+            }
+        };
+        xmlhttp.open("GET", portfolioProjects.xml, true)
+        xmlhttp.send();
+    }
+</script>
+
+
+
+</body>
+</html>
