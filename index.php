@@ -1,5 +1,6 @@
 <?php
 	$isSuccess = isset($_GET['success']);
+	$isFailed = isset($_GET['failed']);
 	$dataArray = array();
 	if (isset($_POST['submit-btn'])) 
 	{
@@ -10,7 +11,7 @@
 		{
 			if (!sendEmail($dataArray)) 
 			{
-            	$errorsArray['submit-btn'] = "Send Failed";
+				$errorsArray['submit-btn'] = "Send Failed";
 			}
 			else 
 			{
@@ -32,25 +33,30 @@
 		if (empty($inputArray['inFirstName'])) 
 		{
 			$errorsArray['inFirstName'] = 'First Name is required.';
+
 		}
 		//Last name is required
 		if (empty($inputArray['inLastName'])) 
 		{
 			$errorsArray['inLastName'] = 'Last  Name is required.';
+
 		}
 		//Validate email format
 		if (empty($inputArray['inEmailAddress'])) {
 			$errorsArray['inEmailAddress'] = "Email is required.";
+
 		} else 
 		{
 	        if (!filter_var($inputArray['inEmailAddress'], FILTER_VALIDATE_EMAIL))
 			{
 				$errorsArray['inEmailAddress'] = "Email is not in a valid format <br>(Ex. yourName@host.com)";
+
 			}
 		}
 		//Validate message input
 		if (empty($inputArray['inMessage'])) {
 			$errorsArray['inMessage'] = "Message is required.";
+
 		} 
 		if (!empty($inputArray['honeypot'])) {
 			$errorsArray['honeypot'] = "Uh Oh";
@@ -361,10 +367,28 @@
 											I'd love to hear about your next project and get you started. Feel free to contact me through email or by simply completing the form fields below.
 										</p>
 									</div>
+
+
+									<?php if ($isSuccess)
+									{ ?>
+
+								<div id="contact-Modal" class="contact-modal">
+
+								<!-- Modal content -->
+								<div class="contact-modal-content">
+									<h1>Success!</h1>
+									<p>Your message has been successfully</p>
+									<button class="close-contact-modal"> <a href="#home">Return to website.</a></button>
+								</div>
+
+
+									<?php }
+									else
+									{ ?>
 									<div class="contact-form">
-											<form action="<?php echo $_SERVER['SCRIPT_NAME']; ?>" method="POST" class="contact-form">
+											<form action="<?php echo $_SERVER['SCRIPT_NAME']; ?>" method="POST" class="contact-form" name="contactForm" onsubmit="return validateContactForm()">
 													<!-- First Name -->
-													<label for="First Name"><p>First name: 
+													<label for="First Name"><p>First name: <span class="form-error" id="errorFirstName"></span>
 														<?php if (isset($errorsArray))
 													{ ?>
 														<span class="form-error"><?php echo echoValue($errorsArray, 'inFirstName');  ?></span>
@@ -373,11 +397,11 @@
 													</p>
 													</label>
 
-													<input type="text" name="inFirstName" class="border-red" value="<?php echo echoValue($dataArray, 'inFirstName');?>">
+													<input type="text" id="firstName" name="inFirstName" class="border-red" value="<?php echo echoValue($dataArray, 'inFirstName');?>">
 													
 													<br>
 													<!-- Last Name -->
-													<label for="Last Name"><p>Last name:
+													<label for="Last Name"><p>Last name: <span class="form-error" id="errorLastName"></span>
 														<?php if (isset($errorsArray)) 
 													{ ?>
 														<span class="form-error"><?php echo echoValue($errorsArray, 'inLastName');  ?></span>
@@ -385,18 +409,18 @@
 													</p>
 													</label>
 	
-													<input type="text" name="inLastName" value="<?php echo echoValue($dataArray, 'inLastName');?>">
+													<input type="text" id="lastName" name="inLastName" value="<?php echo echoValue($dataArray, 'inLastName');?>">
 													
 													<br>
 													<!-- Email Address -->
-													<label for="Email Address"><p>Email Address:
+													<label for="Email Address"><p>Email Address: <span class="form-error" id="errorEmail"></span>
 														<?php if (isset($errorsArray)) 
 													{ ?>
 														<span class="form-error"><?php echo echoValue($errorsArray, 'inEmailAddress');  ?></span>
 													<?php } ?>
 													</p>
 													</label>
-													<input type="text" name="inEmailAddress" value="<?php echo echoValue($dataArray, 'inEmailAddress');?>">
+													<input type="text" id="emailAddress" name="inEmailAddress" value="<?php echo echoValue($dataArray, 'inEmailAddress');?>">
 													
 													<br>
 
@@ -405,7 +429,7 @@
 													
 													<br> -->
 													
-													<label for="Message"><p>Message:
+													<label for="Message"><p>Message: <span class="form-error" id="errorMessage"></span>
 														<?php if (isset($errorsArray)) 
 													{ ?>
 														<span class="form-error textarea-error"><?php echo echoValue($errorsArray, 'inMessage');  ?></span>
@@ -413,7 +437,7 @@
 													</p>
 													</label>
 
-													<textarea name="inMessage" id="" cols="30" rows="10"></textarea>
+													<textarea  id="messageField" name="inMessage" id="" cols="30" rows="10"></textarea>
 													<input type="hidden" name="honeypot">
 													<div class="form-buttons">
 															<button type="submit" value="Submit" class="submit-btn" name="submit-btn"> <span>Submit</span>	</button>
@@ -423,6 +447,7 @@
 													<!-- form-buttons -->
 												  </form>
 									</div>
+									<?php } ?>
 						</div>
 						<!-- contact-section-content -->
 			</div>
