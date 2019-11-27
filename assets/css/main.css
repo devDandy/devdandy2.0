@@ -241,11 +241,11 @@ a {
 
 .header-border1 {
   border-top: 16px double #223843;
-  border-bottom: 16px double #AD343E; }
+  border-bottom: 16px double #223843; }
 
 .header-border2 {
   border-right: 16px double #AD343E;
-  border-left: 16px double #223843; }
+  border-left: 16px double #AD343E; }
 
 .header-content-container {
   margin: 3em 5em; }

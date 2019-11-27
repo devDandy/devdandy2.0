@@ -159,8 +159,8 @@
 												I have three years of web development experience and love with what I do. 
 											</p>
 											<div class="social-media-icons">
-												<img src="assets/img/socialmedia/github.png" alt="Github.com/devdandy">							
-												<img src="assets/img/socialmedia/linkedin.png" alt="LinkedIn Profile">
+												<a href="https://github.com/devDandy"><img src="assets/img/socialmedia/github.png" alt="Github.com/devdandy"></a>						
+												<a href="https://www.linkedin.com/in/dan-schneider1/"><img src="assets/img/socialmedia/linkedin.png" alt="LinkedIn Profile"></a>
 											</div>
 											<!-- social-media-icons -->
 										</div>

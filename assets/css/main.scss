@@ -313,11 +313,11 @@ a {
 }
 .header-border1 {
     border-top: 16px double $main-color;
-    border-bottom: 16px double $secondary-color;
+    border-bottom: 16px double $main-color;
 }
 .header-border2 {
     border-right: 16px double $secondary-color;
-    border-left: 16px double $main-color;
+    border-left: 16px double $secondary-color;
 }
 
 .header-content-container {
