@@ -448,13 +448,13 @@
 													</div>
 													<!-- form-buttons -->
 												  </form>
-													<div id="failed-contact-modal" class="failed-contact-modal">
+													<div id="failed-contact-modal" >
 
 														<!-- Modal content -->
 														<div class="failed-contact-modal-content">
 															<h1>Uh Oh!</h1>
 															<p>Something went wrong please try again</p>
-															<button class="failed-close-contact-modal"> <a href="#my-contact-info">Return to form.</a></button>
+															<button  id="close-failed-modal" onclick="closeFailedModal();"> <a href="#my-contact-info">Return to form.</a></button>
 														</div>
 													</div>
 

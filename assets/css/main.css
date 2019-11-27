@@ -559,9 +559,7 @@ input[type=text], textarea {
     padding: 1em 0; }
 
 #failed-contact-modal {
-  display: none; }
-
-.failed-contact-modal {
+  display: none;
   position: fixed;
   /* Stay in place */
   z-index: 1;
