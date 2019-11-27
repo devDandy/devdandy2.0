@@ -69,7 +69,7 @@ button {
   font-size: 1.5em;
   box-shadow: 5px 5px 0px #223843;
   transition: 0.3s;
-  cursor: clicker; }
+  cursor: pointer; }
   button a {
     color: #EFF1F3;
     font-family: 'Work Sans', sans-serif;
@@ -101,7 +101,7 @@ button:hover {
   font-size: 1.5em;
   box-shadow: 5px 5px 0px #223843;
   transition: 0.3s;
-  cursor: clicker;
+  cursor: pointer;
   color: #EFF1F3;
   font-family: 'Work Sans', sans-serif;
   font-weight: bold;
@@ -240,12 +240,12 @@ a {
   margin: 5em 5em; }
 
 .header-border1 {
-  border-top: 16px dashed #223843;
-  border-bottom: 16px dashed #AD343E; }
+  border-top: 16px double #223843;
+  border-bottom: 16px double #AD343E; }
 
 .header-border2 {
-  border-right: 16px dashed #AD343E;
-  border-left: 16px dashed #223843; }
+  border-right: 16px double #AD343E;
+  border-left: 16px double #223843; }
 
 .header-content-container {
   margin: 3em 5em; }
@@ -508,22 +508,20 @@ input[type=text], textarea {
     margin: 0 .5em; }
 
 .submit-btn {
-  color: #AD343E; }
-  .submit-btn span {
-    color: #EFF1F3;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
-    position: relative;
-    transition: 0.5s; }
-    .submit-btn span:hover {
-      color: #AD343E; }
-    .submit-btn span:after {
-      content: '\00bb';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: .3s; }
+  color: #EFF1F3;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  position: relative;
+  transition: 0.5s; }
+  .submit-btn:hover {
+    color: #AD343E; }
+  .submit-btn:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: .3s; }
 
 /* The Modal (background) */
 .contact-modal {
@@ -558,6 +556,43 @@ input[type=text], textarea {
     background: #223843;
     color: #EFF1F3; }
   .contact-modal-content p {
+    padding: 1em 0; }
+
+#failed-contact-modal {
+  display: none; }
+
+.failed-contact-modal {
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  z-index: 5; }
+
+/* Modal Content */
+.failed-contact-modal-content {
+  background-color: #EFF1F3;
+  margin: auto;
+  padding-bottom: 2em;
+  width: 50%;
+  text-align: center; }
+  .failed-contact-modal-content h1 {
+    background: #223843;
+    color: #EFF1F3; }
+  .failed-contact-modal-content p {
     padding: 1em 0; }
 
 /*** FOOTER SECTION ***/

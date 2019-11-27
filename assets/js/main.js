@@ -56,12 +56,18 @@ var backToTopButton = document.getElementById("backToTop");
   }
 // Get the modal
 var modal = document.getElementById("contact-Modal");
+var failedModal = document.getElementById("failed-contact-modal");
 
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close-contact-modal")[0];
+var failedClose = document.getElementsByClassName("failed-close-contact-modal")[0];
 
-  // When the user clicks on <span> (x), close the modal
+  // When the user clicks on span (x), close the modal
+  failedClose.onclick = function() {
+    failedModal.style.display = "none";
+  }
+  
   span.onclick = function() {
     modal.style.display = "none";
   }
@@ -72,22 +78,51 @@ var span = document.getElementsByClassName("close-contact-modal")[0];
       modal.style.display = "none";
     }
   }
-
-
+  window.onclick = function(event) {
+    if (event.target == failedModal) {
+      failedModal.style.display = "none";
+    }
+  }
+  
   function validateContactForm() {
+    var validForm = true;
     var firstName = document.getElementById("firstName").value;
     var lastName = document.getElementById("lastName").value;
     var emailAddress = document.getElementById("emailAddress").value;
     var messageField = document.getElementById("messageField").value;
-
-    function checkIfEmpty(x){
-      if (firstName || lastName || emailAddress || messageField  == "" ) {
-        return document.getElementById(x).innerHTML = "Form field is required.";
-      }
+    
+    if(firstName) {
+      document.getElementById("errorFirstName").innerHTML = "";
+    } else {
+       document.getElementById("errorFirstName").innerHTML = "First Name is required";
+      validForm = false;
     }
-      checkIfEmpty("errorFirstName"); 
-      checkIfEmpty("errorLastName"); 
-      checkIfEmpty("errorEmail"); 
-      checkIfEmpty("errorMessage"); 
+
+    if(lastName) {
+      document.getElementById("errorLastName").innerHTML = "";
+    } else {
+       document.getElementById("errorLastName").innerHTML = "Last Name is required!";
+      validForm = false;
+    }
+
+    if(emailAddress) {
+      document.getElementById("errorEmail").innerHTML = "";
+    } else {
+       document.getElementById("errorEmail").innerHTML = "Email is required!";
+      validForm = false;
+    }
+
+    if(messageField) {
+      document.getElementById("errorMessage").innerHTML = "";
+    } else {
+       document.getElementById("errorMessage").innerHTML = "Email is required!";
+      validForm = false;
+    }
+    if(!validForm) {
+      failedModal.style.display = "block";
       return false;
+    } 
+
+
+
   }

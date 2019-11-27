@@ -372,13 +372,15 @@
 									<?php if ($isSuccess)
 									{ ?>
 
+								
 								<div id="contact-Modal" class="contact-modal">
 
-								<!-- Modal content -->
-								<div class="contact-modal-content">
-									<h1>Success!</h1>
-									<p>Your message has been successfully</p>
-									<button class="close-contact-modal"> <a href="#home">Return to website.</a></button>
+									<!-- Modal content -->
+									<div class="contact-modal-content">
+										<h1>Success!</h1>
+										<p>Your message has been successfully</p>
+										<button class="close-contact-modal"> <a href="#home">Return to website.</a></button>
+									</div>
 								</div>
 
 
@@ -440,12 +442,22 @@
 													<textarea  id="messageField" name="inMessage" id="" cols="30" rows="10"></textarea>
 													<input type="hidden" name="honeypot">
 													<div class="form-buttons">
-															<button type="submit" value="Submit" class="submit-btn" name="submit-btn"> <span>Submit</span>	</button>
+															<button type="submit" value="Submit" class="submit-btn" name="submit-btn"> Submit	</button>
 															<button type="reset" value="Reset" class="reset-button"> Reset	</button>
 
 													</div>
 													<!-- form-buttons -->
 												  </form>
+													<div id="failed-contact-modal" class="failed-contact-modal">
+
+														<!-- Modal content -->
+														<div class="failed-contact-modal-content">
+															<h1>Uh Oh!</h1>
+															<p>Something went wrong please try again</p>
+															<button class="failed-close-contact-modal"> <a href="#my-contact-info">Return to form.</a></button>
+														</div>
+													</div>
+
 									</div>
 									<?php } ?>
 						</div>
