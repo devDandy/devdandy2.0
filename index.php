@@ -399,7 +399,7 @@
 													</p>
 													</label>
 
-													<input type="text" id="firstName" name="inFirstName" class="border-red" value="<?php echo echoValue($dataArray, 'inFirstName');?>">
+													<input type="text" id="firstName" name="inFirstName"  value="<?php echo echoValue($dataArray, 'inFirstName');?>">
 													
 													<br>
 													<!-- Last Name -->

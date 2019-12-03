@@ -91,25 +91,29 @@ var failedClose = document.getElementById("close-failed-modal");
     if(firstName) {
       document.getElementById("errorFirstName").innerHTML = "";
     } else {
-       document.getElementById("errorFirstName").innerHTML = "First Name is required";
+      document.getElementById("errorFirstName").innerHTML = "First Name is required";
+      document.getElementById("firstName").classList.add("form-error-styles");
       validForm = false;
     }
 
     if(lastName) {
       document.getElementById("errorLastName").innerHTML = "";
     } else {
-       document.getElementById("errorLastName").innerHTML = "Last Name is required";
+      document.getElementById("errorLastName").innerHTML = "Last Name is required";
+      document.getElementById("lastName").classList.add("form-error-styles");
       validForm = false;
     }
     if(!validEmail.test(emailAddress)) {
       document.getElementById("errorEmail").innerHTML = "Please enter a valid email";
+      document.getElementById("emailAddress").classList.add("form-error-styles");
       validForm = false;
     }
 
     if(messageField) {
       document.getElementById("errorMessage").innerHTML = "";
     } else {
-       document.getElementById("errorMessage").innerHTML = "Message is required";
+      document.getElementById("errorMessage").innerHTML = "Message is required";
+      document.getElementById("messageField").classList.add("form-error-styles");
       validForm = false;
     }
     if(!validForm) {

@@ -582,7 +582,10 @@ a {
     .form-error {
         display:inline;
         float:right;
-        color:red;
+        color:$secondary-color;
+    }
+    .form-error-styles {
+        border-bottom: 4px solid $secondary-color !important;
     }
 
     .form-buttons {

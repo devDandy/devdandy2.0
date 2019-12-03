@@ -498,7 +498,10 @@ input[type=text], textarea {
 .form-error {
   display: inline;
   float: right;
-  color: red; }
+  color: #AD343E; }
+
+.form-error-styles {
+  border-bottom: 4px solid #AD343E !important; }
 
 .form-buttons {
   margin: 1em auto;
