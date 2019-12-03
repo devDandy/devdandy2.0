@@ -383,6 +383,7 @@ a {
   height: auto; }
 
 .plus-to-minus-container {
+  display: none;
   position: relative;
   text-align: center;
   margin: -2em auto;
@@ -437,7 +438,6 @@ a {
     bottom: 11px; }
 
 .portfolio-description-box {
-  display: none;
   position: relative;
   margin: 0 auto;
   padding: 2em 2em 4em 2em;
@@ -612,9 +612,6 @@ input[type=text], textarea {
   100% {
     opacity: 1; } }
 /*** MEDIA QUERY ***/
-@media only screen and (max-width: 1303px) {
-  .portfolio-responsive-col {
-    width: 50%; } }
 @media only screen and (max-width: 1623px) {
   h1 {
     font-size: 5em; } }
@@ -650,6 +647,9 @@ input[type=text], textarea {
 
   .portrait-button button {
     width: 75%; } }
+@media only screen and (max-width: 1307px) {
+  .portfolio-responsive-col {
+    width: 50%; } }
 @media only screen and (max-width: 1221px) {
   .header-content-container {
     margin: 3em 2em; } }

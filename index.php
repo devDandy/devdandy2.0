@@ -239,28 +239,10 @@
 				<div class="row">
 					<div class="portfolio-responsive-col">
 						<div class="portfolio-card">
-							<div class="portfolio-header">
-								<img src="assets/img/portfolio-img-REPLACE-LATER.png" alt="NissenERT" class="portfolio-header-img">
-								<div class="plus-to-minus-container">
-									<div class="plus-to-minus-circle" onclick="expandPortfolioInfo();">
-										<div class="plus-to-minus-icon"></div>
-									</div>
-									<!-- plus-to-minus-circle -->
-								</div>
-								<!-- plus-to-minus-container -->
-							</div>
-							<!-- portfolio-header -->
 							<div class="portfolio-description-box"  id="testtesttest">
 								<div class="portfolio-description-content">
+								<img src="assets/img/nissenERT.png" title="NissenERT" alt="Front page of NissenERT" class="portfolio-header-img">
 									<h3>NissenERT</h3>
-									<p>
-											I reached out to Brady Nissenin early 2017 to inquire about creating his business's website. 
-											The goal with his website was to establish an online presence, attract customers, and bring awareness to his business in the Des Moines Area. 
-										</p>
-										<p>
-											NissenERT's design is a content first approach to differntiate itself from competitors where most of their information was out-of-place or too busy to obtain information. 
-											The design was created in Adobe Xd and then I developed the website using HTML, CSS, PHP, JavaScript, and the Foundation 6 framework. 
-										</p>
 								</div>
 								<div class="portfolio-button-links">
 										<button><a href="">View Website</a></button>
@@ -275,28 +257,13 @@
 					<!-- col-4 -->
 					<div class="portfolio-responsive-col">
 							<div class="portfolio-card">
-									<div class="portfolio-header">
-										<img src="assets/img/portfolio-img-REPLACE-LATER.png" alt="NissenERT" class="portfolio-header-img">
-										<div class="plus-to-minus-container">
-											<div class="plus-to-minus-circle">
-												<div class="plus-to-minus-icon"></div>
-											</div>
-											<!-- plus-to-minus-circle -->
-										</div>
-										<!-- plus-to-minus-container -->
-									</div>
+
 									<!-- portfolio-header -->
 									<div class="portfolio-description-box">
 										<div class="portfolio-description-content">
-											<h3>NissenERT</h3>
-											<p>
-													I reached out to Brady Nissenin early 2017 to inquire about creating his business's website. The goal with his website was to establish an online 
-													presence, attract customers, and bring awareness to his business in the Des Moines Area. 
-												</p>
-												<p>
-													NissenERT's design is a content first approach to differntiate itself from competitors where most of their information was out-of-place or 
-													too busy to obtain information. The design was created in Adobe Xd and then I developed the website using HTML, CSS, PHP, JavaScript, and the Foundation 6 framework. 
-												</p>
+										<img src="assets/img/devdandyBG.png" title="devDandy" alt="Front page of devdandy.com" class="portfolio-header-img">
+											<h3>devDandy.com</h3>
+	
 												<div class="portfolio-button-links">
 														<button><a href="">View Website</a></button>
 														<button><a href="">View Code</a></button>
@@ -311,29 +278,11 @@
 					<!-- portfolio-responsive-col -->
 					<div class="portfolio-responsive-col">
 							<div class="portfolio-card">
-									<div class="portfolio-header">
-										<img src="assets/img/portfolio-img-REPLACE-LATER.png" alt="NissenERT" class="portfolio-header-img">
-										<div class="plus-to-minus-container">
-											<div class="plus-to-minus-circle">
-												<div class="plus-to-minus-icon"></div>
-											</div>
-											<!-- plus-to-minus-circle -->
-										</div>
-										<!-- plus-to-minus-container -->
-									</div>
-									<!-- portfolio-header -->
+
 									<div class="portfolio-description-box">
 										<div class="portfolio-description-content">
-											<h3>NissenERT</h3>
-											<p>
-													I reached out to Brady Nissenin early 2017 to inquire about creating his business's website. The goal with his website was to establish an online presence, 
-													attract customers, and bring awareness to his business in the Des Moines Area. 
-												</p>
-												<p>
-													NissenERT's design is a content first approach to differntiate itself from competitors where most of their information was out-of-place or 
-													too busy to obtain information. The design was created in Adobe Xd and then I developed the website using HTML, CSS, PHP, JavaScript, and the Foundation 6
-													framework. 
-												</p>
+										<img src="assets/img/dmaccPortfolioDay.png" title="DMACC Portfolio Day 2018" alt="Front page of DMACC Portfolio Day 2018" class="portfolio-header-img">
+											<h3>DMACC Portfolio Day</h3>
 											<div class="portfolio-button-links">
 												<button><a href="">View Website</a></button>
 												<button><a href="">View Code</a></button>

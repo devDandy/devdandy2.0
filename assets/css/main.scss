@@ -493,6 +493,7 @@ a {
     }
 
     .plus-to-minus-container {
+        display: none;
         position: relative;
         text-align: center;
         margin: -2em auto;
@@ -514,7 +515,6 @@ a {
         @include plusMinus(24px, 2px, $background-color);
     }
     .portfolio-description-box {
-        display: none;
         position: relative;
         margin: 0 auto;
         padding: 2em 2em 4em 2em;
@@ -703,11 +703,6 @@ a {
 
     /*** MEDIA QUERY ***/
 
-  @media only screen and (max-width: 1303px) {
-    .portfolio-responsive-col {
-        width: 50%;
-    }
-  }
   @media only screen and (max-width: 1623px) {
     h1 {
         font-size:5em;
@@ -754,6 +749,13 @@ a {
     }
 
   }
+
+  @media only screen and (max-width: 1307px) {
+    .portfolio-responsive-col {
+        width: 50%;
+    }
+  }
+  
   @media only screen and (max-width: 1221px) {
     .header-content-container  {
         margin: 3em 2em;
